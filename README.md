@@ -10,28 +10,40 @@ cl-waveset is a Common Lisp library for performing non-real-time waveset synthes
 
 Audio I/O is powered by libsndfile via CFFI. You must have the libsndfile C library installed on your operating system:
 
-Debian / Ubuntu: sudo apt install libsndfile1-dev
+Debian / Ubuntu: ``sudo apt install libsndfile1-dev``
 
-Arch Linux: sudo pacman -S libsndfile
+Arch Linux: ``sudo pacman -S libsndfile``
 
-macOS (Homebrew): brew install libsndfile
+macOS (Homebrew): ``brew install libsndfile``
+
+---
 
 2. Lisp Dependencies
 
 cl-waveset depends on cl-libsndfile, which is not in the default Quicklisp dist. Clone both repositories into your Quicklisp local-projects directory:
 
+``` shell
 cd ~/quicklisp/local-projects/
 git clone https://github.com/ghollisjr/cl-libsndfile.git
+```
+
 Ensure cl-waveset is also in ~/quicklisp/local-projects/ or registered with ASDF
 
+
+
+---
 
 3. Loading the System
 
 In your Common Lisp REPL (e.g., SBCL with SLY or SLIME):
 
+``` common-lisp
 (ql:register-local-projects)
 (ql:quickload #:cl-waveset)
 (in-package #:cl-waveset)
+```
+
+---
 
 4. Using cl-waveset
 
