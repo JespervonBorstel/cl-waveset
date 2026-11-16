@@ -1,8 +1,10 @@
-cl-waveset
+# cl-waveset
+
+---
 
 cl-waveset is a Common Lisp library for performing non-real-time waveset synthesis as decribed by Trevor Wishart.
 
-Prerequisites & Installation
+# Prerequisites & Installation
 
 1. System Dependencies
 
@@ -20,7 +22,7 @@ cl-waveset depends on cl-libsndfile, which is not in the default Quicklisp dist.
 
 cd ~/quicklisp/local-projects/
 git clone https://github.com/ghollisjr/cl-libsndfile.git
-# Ensure cl-waveset is also in ~/quicklisp/local-projects/ or registered with ASDF
+Ensure cl-waveset is also in ~/quicklisp/local-projects/ or registered with ASDF
 
 
 3. Loading the System
